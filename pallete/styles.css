@@ -163,3 +163,39 @@ button:hover {
 .description {
     margin-bottom: 15px; /* 설명 간격 */
 }
+
+.album-cover {
+    transition: transform 0.3s; /* 크기 변화 애니메이션 */
+}
+
+.album-cover:hover {
+    transform: scale(1.1); /* 마우스 오버 시 크기 증가 */
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 반투명 배경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 가장 위에 표시 */
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px; /* 둥근 모서리 */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}

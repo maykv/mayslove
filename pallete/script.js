@@ -35,6 +35,23 @@ document.addEventListener("DOMContentLoaded", function() {
         "아이유가 도대체 이 노래로 무슨 말을 담고 싶었을까. 내가 그동안 이렇게 아팠다고 전하고 싶었을까? 아니면 상처입은 이름들에게 위로를 전하고 싶었을까? 이 노래는 여러 시각을 가질 수 있던 노래였다. 이 노래는 지쳐있던 나에게 위로의 말을 건넬 수 있었던 음악이다. 이게 내가 이 음반을 명반으로 꼽는 이유이다.",
     ];
 
+    const albumCover = document.getElementById('album-cover');
+
+    // 앨범 커버 클릭 시 팝업 생성
+    albumCover.addEventListener('click', function() {
+        const popup = document.createElement('div');
+        popup.className = 'popup';
+        popup.innerHTML = `<span class="close">&times;</span><img src="${this.src}" alt="앨범 커버" class="popup-image">`;
+        
+        document.body.appendChild(popup);
+
+        // 팝업 닫기
+        const closeButton = popup.querySelector('.close');
+        closeButton.addEventListener('click', function() {
+            document.body.removeChild(popup);
+        });
+    });
+
     tracklistItems.forEach((item, index) => {
         item.addEventListener('click', function() {
             const youtubeUrl = this.getAttribute('data-youtube');
