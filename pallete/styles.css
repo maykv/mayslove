@@ -198,4 +198,23 @@ button:hover {
     color: white;
     font-size: 40px;
     cursor: pointer;
+    transition: transform 0.3s; /* 크기 변화 애니메이션 */
+}
+
+/* 마우스 오버 시 크기 증가 */
+.close:hover {
+    transform: scale(1.2); /* 크기 증가 */
+}
+
+a {
+    text-decoration: none; /* 기본적으로 밑줄 제거 */
+    font-weight: 700;
+    color: gray; /* 기본 색상 */
+    transition: transform 0.3s, color 0.3s; /* 애니메이션 효과 */
+}
+
+/* 마우스 오버 시 크기 증가 및 색상 변경 */
+a:hover {
+    transform: scale(1.9); /* 크기 증가 */
+    color: #c4c4c4; /* 마우스 오버 시 색상 변경 */
 }
