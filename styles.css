@@ -96,3 +96,25 @@ h2 {
     color: #777;
     margin-top: 20px;
 }
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* 모바일에서는 리스트를 블록으로 나열 */
+        margin: 10px 0; /* 간격 조정 */
+    }
+
+    .album {
+        width: calc(100% - 10px); /* 모바일에서는 앨범을 1개씩 나열 */
+        margin-right: 0; /* 오른쪽 간격 제거 */
+    }
+
+    .album-cover {
+        width: 80px; /* 모바일에서 커버 이미지 너비 조정 */
+        height: 80px; /* 모바일에서 커버 이미지 높이 조정 */
+    }
+
+    h1 {
+        font-size: 2em; /* 모바일에서 제목 크기 조정 */
+    }
+}
