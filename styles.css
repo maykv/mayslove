@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px; /* 컨테이너 너비 */
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #777; /* 기본 색상: 회색 */
+    transition: color 0.3s ease, transform 0.3s ease; /* 색상 및 크기 변화에 대한 전환 효과 */
+    display: inline-block; /* 인라인 블록으로 설정하여 크기 변화 적용 */
+    padding: 5px 10px; /* 패딩 추가로 클릭 영역 확대 */
+}
+
+nav ul li a:hover {
+    color: #000; /* 마우스 오버 시 색상: 검정색 */
+    transform: scale(1.2); /* 마우스 오버 시 크기 증가 */
+}
+
+h1 {
+    font-size: 2.5em; /* 제목 크기 조정 */
+}
+
+section {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap; /* 여러 줄로 나누기 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.album {
+    background: #f9f9f9; /* 앨범 영역 배경색 */
+    border: 1px solid #ddd; /* 테두리 색상 */
+    border-radius: 15px; /* 둥근 모서리 */
+    padding: 10px; /* 패딩 */
+    margin-right: 10px; /* 오른쪽 간격을 10px로 설정 */
+    margin-bottom: 20px; /* 하단 간격 */
+    width: calc(30% - 10px); /* 너비를 줄여서 3개씩 나누기 */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* 중앙 정렬 */
+}
+
+.album:last-child {
+    margin-right: 0; /* 마지막 앨범의 오른쪽 간격 제거 */
+}
+
+.album-cover {
+    width: 100px; /* 커버 이미지 너비 100px */
+    height: 100px; /* 커버 이미지 높이 100px */
+    object-fit: cover; /* 이미지 비율 유지하며 잘리기 */
+    border-radius: 10px; /* 둥근 모서리 */
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
