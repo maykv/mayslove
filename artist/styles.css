@@ -1,0 +1,120 @@
+body {
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+.artist-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.artist-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.biography {
+    margin-bottom: 20px;
+}
+
+.tracklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tracklist li {
+    margin: 5px 0;
+}
+
+.tracklist a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.tracklist a:hover {
+    transform: scale(1.1);
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap; /* 여러 줄로 나누기 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.album {
+    background: #f9f9f9; /* 앨범 영역 배경색 */
+    border: 1px solid #ddd; /* 테두리 색상 */
+    border-radius: 15px; /* 둥근 모서리 */
+    padding: 10px; /* 패딩 */
+    margin-right: 10px; /* 오른쪽 간격을 10px로 설정 */
+    margin-bottom: 20px; /* 하단 간격 */
+    width: calc(30% - 10px); /* 너비를 줄여서 3개씩 나누기 */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* 중앙 정렬 */
+    transition: transform 0.3s; /* 크기 변화 애니메이션 */
+}
+
+.album:hover {
+    transform: scale(1.05); /* 마우스 오버 시 크기 증가 */
+}
+
+.album:last-child {
+    margin-right: 0; /* 마지막 앨범의 오른쪽 간격 제거 */
+}
+
+.album-cover {
+    width: 100px; /* 커버 이미지 너비 100px */
+    height: 100px; /* 커버 이미지 높이 100px */
+    object-fit: cover; /* 이미지 비율 유지하며 잘리기 */
+    border-radius: 10px; /* 둥근 모서리 */
+}
+
+.album a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit; /* 색상 상속 */
+}

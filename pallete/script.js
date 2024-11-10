@@ -43,9 +43,16 @@ document.addEventListener("DOMContentLoaded", function() {
         popup.className = 'popup';
         popup.innerHTML = `<span class="close">&times;</span><img src="${this.src}" alt="앨범 커버" class="popup-image">`;
         
+        // 팝업 배경 클릭 시 닫기
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) {
+                document.body.removeChild(popup);
+            }
+        });
+
         document.body.appendChild(popup);
 
-        // 팝업 닫기
+        // 팝업 닫기 버튼 클릭 시 닫기
         const closeButton = popup.querySelector('.close');
         closeButton.addEventListener('click', function() {
             document.body.removeChild(popup);

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LILAC - 아이유</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>앨범 리뷰</h1>
+        </header>
+
+        <div class="info-container">
+            <img src="https://image.bugsm.co.kr/album/images/3000/40271/4027185.jpg?version=20221119004352.0" alt="앨범 커버" class="album-cover" id="album-cover">
+            <div class="album-info">
+                <h2>LILAC</h2>
+                <p><a href="../artist/iu.html"><strong>아이유</strong></a> / 2021.03.25.</p>
+                <p>기획사: <strong>이담엔터테인먼트</strong> / 발매사: <strong>카카오엔터테인먼트</strong></p>
+                <p class="description">아이유의 다섯 번째 정규앨범 [LILAC]은 사랑과 이별, 시간의 흐름에 대한 이야기를 담고 있으며, 다양한 음악적 요소가 조화를 이루며 새로운 경험을 제공합니다.</p>
+            </div>
+        </div>
+
+        <div class="media-container">
+            <div class="tracklist-container">
+                <h2>트랙리스트</h2>
+                <ul id="tracklist">
+                    <li data-youtube="https://www.youtube.com/embed/04tYkKUPPv4">
+                        <span class="track-number">01</span> 라일락
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/E787kCVAeL8">
+                        <span class="track-number">02</span> Flu
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/dk22oBpplKA">
+                        <span class="track-number">03</span> Coin
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/PLDH-rcYd8c">
+                        <span class="track-number">04</span> 봄 안녕 봄
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/ZThVobEtp_o/">
+                        <span class="track-number">05</span> Celebrity
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/hiUPJaHjuUk">
+                        <span class="track-number">06</span> 돌림노래 (feat. DEAN)
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/https://www.youtube.com/embed/ZThVobEtp_o">
+                        <span class="track-number">07</span> 빈 컵 (Empty Cup)
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/TqIAndOnd74">
+                        <span class="track-number">08</span> 아이와 나의 바다
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/7n9D8ZeOQv0">
+                        <span class="track-number">09</span> 어푸 (Ah puh)
+                    </li> 
+                    <li data-youtube="https://www.youtube.com/embed/uAyZZLL3faY">
+                        <span class="track-number">10</span> 에필로그
+                    </li> 
+                </ul>
+            </div>
+
+            <div class="youtube-container">
+                <h2>유튜브 영상</h2>
+                <div id="youtube-video">
+                    <iframe id="youtube-embed" width="100%" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="description-container">
+                    <div class="description" id="official-description">
+                        <strong>공식 설명</strong>
+                        <p>여기에 설명이 표시됩니다. 각 트랙을 눌러 각 트랙에 대한 설명을 확인하세요.</p>
+                    </div>
+                    <div class="description" id="personal-review" style="display: none;">
+                        <strong>주인장 평론</strong>
+                        <p id="personal-review-text">여기에 주인장 평론이 표시됩니다. 각 트랙을 눌러 각 트랙에 대한 설명을 확인하세요.</p>
+                    </div>
+                    <div class="button-container">
+                        <button id="show-official">공식 설명 보기</button>
+                        <button id="show-personal">주인장 평론 보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lilac.js"></script>
+</body>
+</html>

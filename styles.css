@@ -5,6 +5,20 @@
     font-style: normal;
 }
 
+a {
+    text-decoration: none; /* 기본적으로 밑줄 제거 */
+    color: gray; /* 기본 색상 */
+    font-weight: 500;
+    transition: transform 0.3s, color 0.3s; /* 애니메이션 효과 */
+}
+
+/* 마우스 오버 시 크기 증가 및 색상 변경 */
+a:hover {
+    transform: scale(1.9); /* 크기 증가 */
+    color: #c4c4c4; /* 마우스 오버 시 색상 변경 */
+}
+
+
 body {
     font-family: 'Pretendard-Regular', Arial, sans-serif;
     background-color: #f4f4f4;
@@ -77,6 +91,11 @@ h2 {
     width: calc(30% - 10px); /* 너비를 줄여서 3개씩 나누기 */
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     text-align: center; /* 중앙 정렬 */
+    transition: transform 0.3s; /* 크기 변화 애니메이션 */
+}
+
+.album:hover {
+    transform: scale(1.05); /* 마우스 오버 시 크기 증가 */
 }
 
 .album:last-child {
@@ -89,6 +108,12 @@ h2 {
     object-fit: cover; /* 이미지 비율 유지하며 잘리기 */
     border-radius: 10px; /* 둥근 모서리 */
 }
+
+.album a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit; /* 색상 상속 */
+}
+
 
 .footer {
     text-align: center;
@@ -118,3 +143,4 @@ h2 {
         font-size: 2em; /* 모바일에서 제목 크기 조정 */
     }
 }
+
