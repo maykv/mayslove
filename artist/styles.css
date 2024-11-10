@@ -118,3 +118,13 @@ body {
     text-decoration: none; /* 링크 밑줄 제거 */
     color: inherit; /* 색상 상속 */
 }
+
+.agency-toggle {
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능하게 만듭니다. */
+    text-decoration: none;
+}
+
+.agency-list {
+    margin-top: 5px; /* 목록 상단 간격 */
+    padding-left: 20px; /* 목록 왼쪽 패딩 */
+}

@@ -18,7 +18,16 @@
                 <h2>기본 정보</h2>
                 <p><strong>본명:</strong> 이지은</p>
                 <p><strong>생년월일:</strong> 1993년 5월 16일</p>
-                <p><strong>소속사:</strong> 카카오엠</p>
+                    <p><strong>소속사:</strong> 이담엔터테인먼트 <small>(2020.01.06.~)</small></p>
+                    <div class="agency-toggle">
+                        <span class="toggle-button"><strong>[ 과거 소속사 펼치고 접기 ]</strong></span>
+                        <div class="agency-list" style="display: none;">
+                            카카오M <small>(2018~2019)</small><br>
+                            페이브엔터테인먼트 <small>(2016~2017)</small><br>
+                            로엔트리 <small>(2014~2016)</small><br>
+                            로엔엔터테인먼트 <small>(2008~2013)</small>
+                        </div>
+                </div>
                 <p><strong>장르:</strong> K-Pop, 발라드, R&B</p>
                 <p><strong>데뷔:</strong> 2008년</p>
             </div>
@@ -202,16 +211,27 @@
                             <p>타이틀 곡: Shopper, 홀씨</p>
                         </a>
                     </div>
-
-                    
+                </section>
             </div>
+    
+            <footer>
+                <p>© 2024 mayslove 모든 권리 보유.</p>
+            </footer>
         </div>
-
-        <footer>
-            <p>© 2024 mayslove 모든 권리 보유.</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const toggleButton = document.querySelector('.toggle-button');
+                const agencyList = document.querySelector('.agency-list');
+    
+                toggleButton.addEventListener('click', function() {
+                    if (agencyList.style.display === 'none' || agencyList.style.display === '') {
+                        agencyList.style.display = 'block'; // 목록을 펼칩니다.
+                    } else {
+                        agencyList.style.display = 'none'; // 목록을 접습니다.
+                    }
+                });
+            });
+        </script>
+    </body>
+    </html>
