@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoulite - MAYZLOVE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>앨범 리뷰</h1>
+        </header>
+
+        <div class="info-container">
+            <img src="https://image.bugsm.co.kr/album/images/3000/200249/20024926.jpg?version=20210428040248.0" alt="앨범 커버" class="album-cover" id="album-cover">
+            <div class="album-info">
+                <h2>Seoulite</h2>
+                <p>이하이 / 2016.03.09. ~ 2016.04.20.</p>
+                <p>기획사: <strong>YG엔터테인먼트</strong> / 발매사: <strong>YG PLUS</strong></p>
+                <p class="description">이번 앨범 [SEOULITE]는 본래 '서울 사람'을 뜻하지만 '서울의 빛'이라는 의미를 내포하고 있으며, 서울은 소울이라는 중의적인 의미를 담고 있다. 앨범에 담긴 다양한 장르의 음악이 여러 가지 모습을 담고 있는 서울이라는 도시의 다양한 색깔과 어우러진다.</p>
+            </div>
+        </div>
+
+        <div class="media-container">
+            <div class="tracklist-container">
+                <h2>트랙리스트</h2>
+                <ul id="tracklist">
+                    <li data-youtube="https://www.youtube.com/embed/0Rpzh1LNhV4">
+                        <span class="track-number">01</span> WORLD TOUR (비행) feat. MINO
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/Xs1GO4UlHsI">
+                        <span class="track-number">02</span> <strong>MY STAR</strong>
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/HtYZWMUnyxs">
+                        <span class="track-number">03</span> <strong>손잡아 줘요 (HOLD MY HAND)</strong>
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/HJHKHGETBus">
+                        <span class="track-number">04</span> 희망고문 (BLUES)
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/JsaW-lHELYo">
+                        <span class="track-number">05</span> <strong>한숨 (BREATHE)</strong>
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/hiVADilHKK4">
+                        <span class="track-number">06</span> 스쳐 간다 (PASSING BY)
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/mvzDBRoTTHg">
+                        <span class="track-number">07</span> FXXK WIT US feat. DOK2</strong>
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/SDzqAtL47nM">
+                        <span class="track-number">08</span> OFFICIAL feat. Incredival
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/WKWa18lOKcw">
+                        <span class="track-number">09</span> 안봐도 비디오 (VIDEO) feat. BOBBY
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/GmK05N4wbFw">
+                        <span class="track-number">10</span> <strong><span style="color:yellowgreen">MISSING U</span>
+                    </li>
+                    <li data-youtube="https://www.youtube.com/embed/wQ4Cxf9SSXo">
+                        <span class="track-number">11</span> <strong><span style="color:yellowgreen">밤샘 (UP ALL NIGHT) feat. TABLO</span></strong>
+                    </li>
+                    <br>
+                    <small>※ 해당 앨범은 음원에서는 HALF ALBUM 2장으로 나뉘어져있지만 실물 앨범에서는 하나로 합쳐져 있기 때문에 실물 앨범의 트랙리스트를 따라 작성되었습니다.</small>
+                </ul>
+            </div>
+
+            <div class="youtube-container">
+                <h2>유튜브 영상</h2>
+                <div id="youtube-video">
+                    <iframe class="youtube-embed" id="youtube-embed" width="500" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="description-container">
+                    <div class="description" id="official-description">
+                        <strong>공식 설명</strong>
+                        <p>여기에 설명이 표시됩니다. 각 트랙을 눌러 각 트랙에 대한 설명을 확인하세요.</p>
+                    </div>
+                    <div class="description" id="personal-review" style="display: none;">
+                        <strong>주인장 평론</strong>
+                        <p id="personal-review-text">여기에 주인장 평론이 표시됩니다. 각 트랙을 눌러 각 트랙에 대한 설명을 확인하세요.</p>
+                    </div>
+                    <div class="lyrics-container">
+                        <strong>가사</strong>
+                        <p id="lyrics-display">가사가 여기에 표시됩니다.</p>
+                    </div>
+                    <div class="button-container">
+                        <button id="show-official">공식 설명 보기</button>
+                        <button id="show-personal">주인장 평론 보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
